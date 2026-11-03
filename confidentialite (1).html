@@ -1,0 +1,141 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Jelmy Confidentialité</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Document juridique sobre : colonne unique, titres numérotés car les sections se citent entre elles */
+:root{--bg:#FBF9FC;--fg:#241F2E;--mut:#6A6277;--line:#E3DDEA;--acc:#B03A7C;--mark:#FFF1B8;--markfg:#4a3a00;--serif:'Source Serif 4',Georgia,serif;--sans:'Source Sans 3',system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17131D;--fg:#EDE8F3;--mut:#A79FB5;--line:#352E40;--acc:#E583B8;--mark:#4a3c10;--markfg:#FFE9A0;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#17131D;--fg:#EDE8F3;--mut:#A79FB5;--line:#352E40;--acc:#E583B8;--mark:#4a3c10;--markfg:#FFE9A0;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:16px;line-height:1.6;padding-block:28px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+main{max-width:680px;margin:0 auto}
+h1{font-family:var(--serif);font-size:32px;line-height:1.15;margin:0 0 6px;text-wrap:balance}
+h2{font-family:var(--serif);font-size:21px;margin:34px 0 8px;padding-top:18px;border-top:1px solid var(--line);text-wrap:balance}
+p,li{margin:0 0 10px}ul{padding-left:20px;margin:0 0 10px}
+.meta{color:var(--mut);font-size:14px;margin-bottom:18px}
+.lang{display:flex;gap:8px;margin:0 0 22px}
+.lang button{font:inherit;font-weight:600;font-size:14px;padding:6px 14px;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--fg);cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:#fff}
+.lang button:focus-visible{outline:2px solid var(--acc);outline-offset:2px}
+.ph{background:var(--mark);color:var(--markfg);padding:0 4px;border-radius:3px;font-weight:600}
+table{border-collapse:collapse;width:100%;font-size:15px}
+.tw{overflow-x:auto;margin:8px 0 14px}
+th,td{text-align:left;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--mut)}
+a{color:var(--acc)}
+</style>
+
+<main>
+<div class="lang" role="group" aria-label="Langue">
+<button id="bfr" aria-pressed="true" onclick="setL('fr')">Français</button>
+<button id="ben" aria-pressed="false" onclick="setL('en')">English</button>
+</div>
+
+<section id="fr">
+<h1>Politique de confidentialité de Jelmy</h1>
+<p class="meta">Dernière mise à jour : 30 octobre 2026</p>
+<p>Jelmy est un jeu de collection de gummies, de dinosaures et de plantes (« sprouts »). Cette page explique quelles données le jeu utilise, pourquoi, et comment tu peux les contrôler.</p>
+
+<h2>1. Qui est responsable</h2>
+<p>L'éditeur du jeu est LVNdevs, situé à Québec, Canada. Pour toute question sur tes données : <a href="mailto:jelmygames@proton.me">jelmygames@proton.me</a>.</p>
+
+<h2>2. Données que nous utilisons</h2>
+<div class="tw"><table>
+<tr><th>Donnée</th><th>Pourquoi</th><th>Où elle est</th></tr>
+<tr><td>Ta progression : gummies, dinos, sprouts, monnaies, quêtes, réglages, pseudo, titre</td><td>Faire fonctionner le jeu</td><td>Sur ton appareil. Avec un compte, aussi sur nos serveurs pour la sauvegarde.</td></tr>
+<tr><td>Profil public : pseudo, titre, niveau, nombre de gummies, de dinos et jours de série ; liste d'amis, cadeaux, blocages et signalements</td><td>Amis, classement et sécurité des joueurs</td><td>Nos serveurs. Le profil est visible par les autres joueurs connectés. Les blocages et signalements ne sont visibles que par nous.</td></tr>
+<tr><td>Courriel</td><td>Créer ton compte et te reconnecter</td><td>Nos serveurs</td></tr>
+<tr><td>Date d'anniversaire (jour et mois), si tu la renseignes</td><td>Une surprise le jour J. C'est facultatif.</td><td>Sur ton appareil</td></tr>
+<tr><td>Achats</td><td>Livrer ce que tu achètes</td><td>Apple ou Google traite le paiement. Nous ne voyons jamais ton numéro de carte.</td></tr>
+<tr><td>Données techniques : modèle d'appareil, version du jeu, rapports d'erreur</td><td>Corriger les bugs et améliorer le jeu</td><td>Nous n'en collectons pas.</td></tr>
+<tr><td>Échanges entre amis : cadeaux, surprises de Noël, marché de Noël, visites de village et défis de club</td><td>Jouer ensemble</td><td>Nos serveurs. Les autres joueurs voient ton pseudo, ton titre et ton sapin ou village quand tu les partages ou que tu les leur envoies.</td></tr>
+<tr><td>Police d'écriture (Google Fonts)</td><td>Afficher le texte du jeu</td><td>Quand le jeu s'ouvre, ton appareil charge la police depuis Google, qui voit alors ton adresse IP. Aucune autre donnée n'est envoyée.</td></tr>
+</table></div>
+<p>Nous ne demandons ni tes contacts, ni tes photos, ni ton micro. Si tu actives le suivi des pas, Jelmy utilise le capteur de mouvement de ton téléphone et, seulement si tu l'actives, le GPS, uniquement pour compter tes pas et ta distance et faire avancer tes œufs. Ta position n'est ni enregistrée ni envoyée à nos serveurs : seul le nombre de pas fait partie de ta progression.</p>
+
+<h2>3. Publicité</h2>
+<p>Jelmy ne montre aucune publicité.</p>
+
+<h2>4. Avec qui nous partageons les données</h2>
+<ul>
+<li>Notre hébergeur de données, Supabase, qui stocke les comptes et les sauvegardes pour notre compte.</li>
+<li>Apple ou Google, pour les achats et la connexion.</li>
+<li>Les autorités, si la loi l'exige.</li>
+</ul>
+<p>Nous ne vendons pas tes données.</p>
+
+<h2>5. Durée de conservation</h2>
+<p>Nous gardons ton compte et ta sauvegarde tant que ton compte existe. Si tu le supprimes, ses données sont effacées de nos serveurs dans un délai de 30 jours, sauf ce que la loi nous oblige à conserver (par exemple des registres d'achats).</p>
+
+<h2>6. Tes droits</h2>
+<p>Tu peux demander à voir tes données, les corriger ou les supprimer, retirer ton consentement, et recevoir une copie. Ces droits existent notamment au Canada (LPRPDE, et la Loi 25 au Québec), dans l'Union européenne (RGPD) et en Californie (CCPA). Pour les exercer : <a href="mailto:jelmygames@proton.me">jelmygames@proton.me</a>. Tu pourras aussi supprimer ton compte directement dans le jeu, dans Profil « Supprimer mes données ».</p>
+
+<h2>7. Enfants</h2>
+<p>Jelmy n'est pas destiné aux enfants de moins de 13 ans. Si tu penses qu'un enfant a créé un compte, écris-nous et nous le supprimerons.</p>
+
+<h2>8. Probabilités et achats aléatoires</h2>
+<p>Les chances d'obtenir chaque récompense sont affichées dans le jeu pour les packs, les œufs, les bourgeons de sprouts, la roue et le boss. Les gummies, la Sève, la Gelée et le Sugar n'ont aucune valeur en argent et ne peuvent pas être échangés contre de l'argent.</p>
+
+<h2>9. Sécurité</h2>
+<p>Les échanges avec nos serveurs sont chiffrés. Aucun système n'est parfait : si un incident touche tes données, nous te prévenons comme la loi l'exige.</p>
+
+<h2>10. Changements</h2>
+<p>Si cette politique change, nous mettons la date en haut de cette page. En cas de changement important, nous te le dirons dans le jeu.</p>
+</section>
+
+<section id="en" hidden>
+<h1>Jelmy Privacy Policy</h1>
+<p class="meta">Last updated: October 30, 2026</p>
+<p>Jelmy is a collecting game with gummies, dinosaurs and plants ("sprouts"). This page explains what data the game uses, why, and how you can control it.</p>
+
+<h2>1. Who is responsible</h2>
+<p>The game is published by LVNdevs, located in Quebec, Canada. For any question about your data: <a href="mailto:jelmygames@proton.me">jelmygames@proton.me</a>.</p>
+
+<h2>2. Data we use</h2>
+<div class="tw"><table>
+<tr><th>Data</th><th>Why</th><th>Where it is</th></tr>
+<tr><td>Your progress: gummies, dinos, sprouts, currencies, quests, settings, nickname, title</td><td>To run the game</td><td>On your device. With an account, also on our servers for backup.</td></tr>
+<tr><td>Public profile: nickname, title, level, number of gummies, dinos and streak days; friends list, gifts, blocks and reports</td><td>Friends, leaderboard and player safety</td><td>Our servers. The profile is visible to other signed-in players. Blocks and reports are only visible to us.</td></tr>
+<tr><td>Email</td><td>To create your account and sign you back in</td><td>Our servers</td></tr>
+<tr><td>Birthday (day and month), if you enter it</td><td>A surprise on the day. It is optional.</td><td>On your device</td></tr>
+<tr><td>Purchases</td><td>To deliver what you buy</td><td>Apple or Google processes the payment. We never see your card number.</td></tr>
+<tr><td>Technical data: device model, game version, error reports</td><td>To fix bugs and improve the game</td><td>We do not collect any.</td></tr>
+<tr><td>Friend interactions: gifts, Christmas surprises, Christmas market, village visits and club challenges</td><td>To play together</td><td>Our servers. Other players see your nickname, title and tree or village when you share it or send it to them.</td></tr>
+<tr><td>Font (Google Fonts)</td><td>To display the game's text</td><td>When the game opens, your device loads the font from Google, which then sees your IP address. No other data is sent.</td></tr>
+</table></div>
+<p>We do not ask for your contacts, photos or microphone. If you turn on step tracking, Jelmy uses your phone's motion sensor and, only if you turn it on, GPS, solely to count your steps and distance and move your eggs forward. Your position is neither saved nor sent to our servers: only the step count is part of your progress.</p>
+
+<h2>3. Advertising</h2>
+<p>Jelmy shows no ads.</p>
+
+<h2>4. Who we share data with</h2>
+<ul>
+<li>Our data host, Supabase, which stores accounts and backups on our behalf.</li>
+<li>Apple or Google, for purchases and sign-in.</li>
+<li>Authorities, if the law requires it.</li>
+</ul>
+<p>We do not sell your data.</p>
+
+<h2>5. How long we keep it</h2>
+<p>We keep your account and backup as long as your account exists. If you delete it, its data is erased from our servers within 30 days, except what the law requires us to keep (for example purchase records).</p>
+
+<h2>6. Your rights</h2>
+<p>You can ask to see your data, correct it or delete it, withdraw your consent, and receive a copy. These rights exist notably in Canada (PIPEDA, and Law 25 in Quebec), in the European Union (GDPR) and in California (CCPA). To use them: <a href="mailto:jelmygames@proton.me">jelmygames@proton.me</a>. You will also be able to delete your account directly in the game, under Profile “Delete my data”.</p>
+
+<h2>7. Children</h2>
+<p>Jelmy is not directed at children under 13. If you think a child created an account, write to us and we will delete it.</p>
+
+<h2>8. Odds and random purchases</h2>
+<p>The chances of getting each reward are shown in the game for packs, eggs, sprout buds, the wheel and the boss. Gummies, Sap, Jelly and Sugar have no cash value and cannot be exchanged for money.</p>
+
+<h2>9. Security</h2>
+<p>Communication with our servers is encrypted. No system is perfect: if an incident affects your data, we will tell you as the law requires.</p>
+
+<h2>10. Changes</h2>
+<p>If this policy changes, we update the date at the top of this page. For an important change, we will tell you in the game.</p>
+</section>
+</main>
+
+<script>
+function setL(l){var fr=document.getElementById('fr'),en=document.getElementById('en');fr.hidden=l!=='fr';en.hidden=l!=='en';document.getElementById('bfr').setAttribute('aria-pressed',l==='fr');document.getElementById('ben').setAttribute('aria-pressed',l==='en');document.documentElement.lang=l}
+</script>
+</html>
